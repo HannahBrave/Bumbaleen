@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bumbaleen Art</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    background:
+        radial-gradient(circle at top left,#ffe8f8 0%,transparent 40%),
+        radial-gradient(circle at bottom right,#ffd8f2 0%,transparent 40%),
+        linear-gradient(135deg,#fff9fd,#ffeef8);
+    color:#333;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.hero{
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(20px);
+    border-radius:40px;
+    padding:100px 50px;
+    text-align:center;
+    box-shadow:
+        0 25px 60px rgba(255,122,255,.12),
+        0 10px 30px rgba(0,0,0,.05);
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"🐰";
+    position:absolute;
+    right:40px;
+    top:20px;
+    font-size:7rem;
+    opacity:.12;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:800;
+    line-height:1;
+    background:linear-gradient(
+        135deg,
+        #ff6fd8,
+        #b94fff
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.3rem;
+    color:#777;
+}
+
+main{
+    margin-top:35px;
+}
+
+.card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(20px);
+    border-radius:30px;
+    padding:40px;
+    margin-bottom:25px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.05);
+}
+
+.card h2{
+    font-size:2rem;
+    color:#a546ff;
+    margin-bottom:20px;
+}
+
+.bio{
+    line-height:1.9;
+    font-size:1.1rem;
+    color:#555;
+}
+
+.gallery-preview{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px);
+}
+
+.gallery-item img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.gallery-item p{
+    padding:15px;
+    text-align:center;
+    font-weight:500;
+}
+
+.links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.links a{
+    text-decoration:none;
+    background:linear-gradient(
+        135deg,
+        #ff6fd8,
+        #b94fff
+    );
+    color:white;
+    padding:14px 24px;
+    border-radius:999px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.links a:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 10px 25px rgba(185,79,255,.35);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
+
+.sparkles{
+    text-align:center;
+    font-size:1.5rem;
+    margin-bottom:25px;
+    opacity:.7;
+}
+
+@media(max-width:768px){
+
+.hero{
+    padding:70px 30px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.card{
+    padding:25px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sparkles">
+✨ 🐰 ✨ 🐇 ✨
+</div>
+
+<header class="hero">
+
+<h1>Bumbaleen</h1>
+
+<p>
+Bunny Artist • Cartoonist • Community Builder
+</p>
+
+</header>
+
+<main>
+
+<section class="card">
+
+<h2>About Me</h2>
+
+<p class="bio">
+Welcome to my art portfolio! I'm a bunny cartoonist who loves creating cute characters, sharing artwork, and building creative communities through art challenges and competitions. Here you'll find my latest illustrations, featured community artwork, and links to upcoming projects.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>Featured Artwork</h2>
+
+<div class="gallery-preview">
+
+<div class="gallery-item">
+<img src="artwork1.jpg" alt="Artwork 1">
+<p>Artwork One</p>
+</div>
+
+<div class="gallery-item">
+<img src="artwork2.jpg" alt="Artwork 2">
+<p>Artwork Two</p>
+</div>
+
+<div class="gallery-item">
+<img src="artwork3.jpg" alt="Artwork 3">
+<p>Artwork Three</p>
+</div>
+
+<div class="gallery-item">
+<img src="artwork4.jpg" alt="Artwork 4">
+<p>Artwork Four</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>Projects & Competitions</h2>
+
+<div class="links">
+<a href="competition.html">🐰 2026 Bunny Art Competition</a>
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>Connect With Me</h2>
+
+<p style="margin-bottom:20px;color:#666;">
+Feel free to follow along and see what Bumbaleen is up to next.
+</p>
+
+<div class="links">
+
+<a href="https://instagram.com/yourusername" target="_blank">
+Instagram
+</a>
+
+<a href="https://tiktok.com/@yourusername" target="_blank">
+TikTok
+</a>
+
+<a href="mailto:your@email.com">
+Email
+</a>
+
+<a href="#">
+Shop
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 Bumbaleen Art
+</footer>
+
+</div>
+
+</body>
+</html>
