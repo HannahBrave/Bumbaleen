@@ -269,23 +269,26 @@ footer{
 @media(max-width:768px){
 
 .hero{
-    min-height:60vh;
+    min-height:55vh;
 }
 
 .hero-card{
     width:100%;
-    padding:40px 18px;
+    padding:35px 12px;
     border-radius:28px;
+    overflow:visible;
 }
 
 h1{
-    font-size:clamp(3rem,16vw,4.5rem);
-    line-height:1;
-    word-break:normal;
+    font-size:13vw;
+    line-height:1.05;
+    letter-spacing:-0.06em;
+    white-space:nowrap;
 }
 
 .tagline{
     font-size:1rem;
+    margin-top:18px;
 }
 
 .card{
