@@ -295,4 +295,11 @@ h1{
     padding:25px;
 }
 
+/* TEST: make Bumbaleen heading black */
+h1{
+    background:none !important;
+    -webkit-background-clip:initial !important;
+    -webkit-text-fill-color:#000000 !important;
+    color:#000000 !important;
+    
 }
