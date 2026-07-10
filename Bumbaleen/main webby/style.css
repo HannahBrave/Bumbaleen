@@ -280,7 +280,7 @@ footer{
 }
 
 h1{
-    font-size:13vw;
+    font-size:12vw;
     line-height:1.05;
     letter-spacing:-0.06em;
     white-space:nowrap;
@@ -295,11 +295,4 @@ h1{
     padding:25px;
 }
 
-/* TEST: make Bumbaleen heading black */
-h1{
-    background:none !important;
-    -webkit-background-clip:initial !important;
-    -webkit-text-fill-color:#000000 !important;
-    color:#000000 !important;
-    
 }
