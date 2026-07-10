@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Bunny Art Competition - Bumbaleen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ffa0d2 0%, #ff6bb6 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #ffa0d2 0%, #ff6bb6 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .art-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .art-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .art-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9em;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .art-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .art-info {
+            padding: 20px;
+        }
+        
+        .art-info h3 {
+            color: #ff6bb6;
+            margin-bottom: 8px;
+            font-size: 1.3em;
+        }
+        
+        .artist-name {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+        
+        .art-description {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .instagram-link {
+            display: inline-block;
+            padding: 10px 16px;
+            background: linear-gradient(135deg, #ffa0d2 0%, #ff6bb6 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .instagram-link:hover {
+            opacity: 0.8;
+        }
+        
+        .instagram-link::before {
+            content: "📷 ";
+        }
+        
+        footer {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-radius: 0 0 10px 10px;
+            margin-top: 40px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 12px 24px;
+            background: white;
+            color: #ff6bb6;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: #f0f0f0;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="About Me.html" class="back-link">← Back to About Me</a>
+        
+        <header>
+            <h1>🐰 2026 Bunny Art Competition</h1>
+            <p>Celebrating amazing bunny artwork from talented artists</p>
+        </header>
+        
+        <div class="gallery">
+            <!-- Artwork 1 -->
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="path/to/artwork1.jpg" alt="Bunny Artwork 1">
+                </div>
+                <div class="art-info">
+                    <h3>Artwork Title</h3>
+                    <p class="artist-name">Artist Name</p>
+                    <p class="art-description">Description of the bunny artwork and inspiration behind it.</p>
+                    <a href="https://instagram.com/artisthandle" target="_blank" class="instagram-link">View Profile</a>
+                </div>
+            </div>
+            
+            <!-- Artwork 2 -->
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="path/to/artwork2.jpg" alt="Bunny Artwork 2">
+                </div>
+                <div class="art-info">
+                    <h3>Artwork Title</h3>
+                    <p class="artist-name">Artist Name</p>
+                    <p class="art-description">Description of the bunny artwork and inspiration behind it.</p>
+                    <a href="https://instagram.com/artisthandle" target="_blank" class="instagram-link">View Profile</a>
+                </div>
+            </div>
+            
+            <!-- Artwork 3 -->
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="path/to/artwork3.jpg" alt="Bunny Artwork 3">
+                </div>
+                <div class="art-info">
+                    <h3>Artwork Title</h3>
+                    <p class="artist-name">Artist Name</p>
+                    <p class="art-description">Description of the bunny artwork and inspiration behind it.</p>
+                    <a href="https://instagram.com/artisthandle" target="_blank" class="instagram-link">View Profile</a>
+                </div>
+            </div>
+            
+            <!-- Artwork 4 -->
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="path/to/artwork4.jpg" alt="Bunny Artwork 4">
+                </div>
+                <div class="art-info">
+                    <h3>Artwork Title</h3>
+                    <p class="artist-name">Artist Name</p>
+                    <p class="art-description">Description of the bunny artwork and inspiration behind it.</p>
+                    <a href="https://instagram.com/artisthandle" target="_blank" class="instagram-link">View Profile</a>
+                </div>
+            </div>
+            
+            <!-- Artwork 5 -->
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="path/to/artwork5.jpg" alt="Bunny Artwork 5">
+                </div>
+                <div class="art-info">
+                    <h3>Artwork Title</h3>
+                    <p class="artist-name">Artist Name</p>
+                    <p class="art-description">Description of the bunny artwork and inspiration behind it.</p>
+                    <a href="https://instagram.com/artisthandle" target="_blank" class="instagram-link">View Profile</a>
+                </div>
+            </div>
+            
+            <!-- Artwork 6 -->
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="path/to/artwork6.jpg" alt="Bunny Artwork 6">
+                </div>
+                <div class="art-info">
+                    <h3>Artwork Title</h3>
+                    <p class="artist-name">Artist Name</p>
+                    <p class="art-description">Description of the bunny artwork and inspiration behind it.</p>
+                    <a href="https://instagram.com/artisthandle" target="_blank" class="instagram-link">View Profile</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Bumbaleen - Bunny Art Competition</p>
+            <p>Celebrating creativity and adorable bunnies! 🐇✨</p>
+        </footer>
+    </div>
+</body>
+</html>
