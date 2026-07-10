@@ -81,7 +81,6 @@ body::before{
     padding:70px;
     border-radius:40px;
     position:relative;
-    overflow:hidden;
     box-shadow:
     0 30px 60px rgba(0,0,0,.08);
 }
@@ -269,8 +268,24 @@ footer{
 
 @media(max-width:768px){
 
+.hero{
+    min-height:60vh;
+}
+
 .hero-card{
-    padding:40px 25px;
+    width:100%;
+    padding:40px 18px;
+    border-radius:28px;
+}
+
+h1{
+    font-size:clamp(3rem,16vw,4.5rem);
+    line-height:1;
+    word-break:normal;
+}
+
+.tagline{
+    font-size:1rem;
 }
 
 .card{
